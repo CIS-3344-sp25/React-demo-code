@@ -34,6 +34,7 @@ function Hello(props) {
         <p>Hello {props.occupation}</p>
         {props.children} */}
   <h1>Hello Component</h1>
+  <h3>Name: {props.name}</h3>
   <button>
     <Link to="/NyTimes">Go To NyTimes</Link>
   </button>

@@ -8,6 +8,8 @@ import NyTimes from "./components/NyTimes/NyTimes";
 import Forms from "./components/Forms/Forms";
 // import Greet from "./components/Hello/Greet";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Greet from "./components/Greet/Greet";
+import Counter from "./components/Counter/Counter";
 
 function App() {
   return (
@@ -22,13 +24,16 @@ function App() {
         </Hello>
       <Hello name="Charlie" age={39} occupation="Designer" /> */}
 
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Hello/>} />
+          <Route path="/" element={<Hello name="Bob"/>} />
           <Route path="/NyTimes" element={<NyTimes/>}/>
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
       {/* <Forms/> */}
+
+      <Greet name="Bob"/>
+        <Counter/>
     </>
   );
 }
