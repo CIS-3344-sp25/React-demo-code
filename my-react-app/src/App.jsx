@@ -32,8 +32,9 @@ function App() {
       </BrowserRouter> */}
       {/* <Forms/> */}
 
-      <Greet name="Bob"/>
-        <Counter/>
+      {/* <Greet name="Bob"/>
+        <Counter/> */}
+        <NyTimes/>
     </>
   );
 }
