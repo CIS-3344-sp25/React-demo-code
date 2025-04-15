@@ -10,7 +10,12 @@ const apiKey = process.env.NYT_API_KEY;
 
 app.use(
   cors({
-    origin: ["http://localhost:5173", "http://localhost:5000"],
+    origin: [
+      "http://localhost:5173",
+      "http://localhost:5000",
+      "https://react-demo-code.onrender.com/",
+      "https://react-demo-code-2.onrender.com/",
+    ],
     metthods: ["GET", "POST"],
     allowedHeaders: ["Content-Type", "Authorization"],
   })
